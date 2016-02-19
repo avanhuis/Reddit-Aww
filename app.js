@@ -15,9 +15,9 @@ $(function(){
 				var dogStory = $("<h2></h2>").html("<a href='" + imgUrl + "'>" + title + "</a>");
 				// $("body").append(dogStory);
 
-				var commentSection = $("<p></p>").html(numComments + " " + "<a href='http://www.reddit.com/" + comments + "'>comments</a>");
+				var commentSection = $("<p></p>").html(numComments + " " + "<a id='commentLink' href='http://www.reddit.com/" + comments + "'>comments</a>");
 
-				var authorName = $("<h3></h3>").html(author);
+				var authorName = $("<h3></h3>").html("by: "+ author);
 
 				var url = somethingElse.data.children[i].data.thumbnail;
 				var dogImage = $("<img />").attr("src" , url);
